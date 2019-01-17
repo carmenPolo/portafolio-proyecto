@@ -1,0 +1,19 @@
+body{
+  margin: 0;
+  background-color: gold;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Lora', serif;
+}
+
+.navbar {
+
+  min-height: 50px;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
+}
+.navbar-default {
+  background-color: white;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+}
