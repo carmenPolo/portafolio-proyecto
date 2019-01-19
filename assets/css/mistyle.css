@@ -49,8 +49,8 @@ h3 {
 }
 .inner {
 	margin: 0 auto;
-	max-width: 940px;
-	padding: 67px 10px;
+	max-width: 100%;
+	padding: 67px 30px;
 	overflow: hidden;
 	}
 
@@ -59,7 +59,7 @@ h3 {
 ===================================*/
 .relative{
   position: relative;
-  max-width: 220px;
+  max-width: 300px;
 }
 .relative a {
   width: inherit;
@@ -76,20 +76,11 @@ h3 {
   background-color: white;
   width: 100%;
 }
-  #oficinas {
-  	background: #2d303a;
-  	overflow: hidden;
-  	border-bottom: 6px solid #323746;
-  	}
-    .oficinas{
-
-    }
-    .oficina-menu{
-
-    }
-
-    #oficinas ul.oficinas li {
-        float: left;
-        display: inline;
-        margin: 0 15px 15px 0;
-    }
+#oficinas {
+	background: #2d303a;
+	overflow: hidden;
+	}
+#oficinas ul.oficinas li {
+  float: left;  
+  margin: 0 15px 15px 0;
+}
