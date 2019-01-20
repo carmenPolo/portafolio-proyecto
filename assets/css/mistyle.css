@@ -6,22 +6,37 @@ body{
 }
 h3 {
   font-family: 'Lato', sans-serif;
-	font-size: 18px;
-	font-weight: 300;
-	color: #767e9e;
-	line-height: 1.6;
-	}
-  h2 {
-    font-family: 'Lato', sans-serif;
-  	font-size: 30px;
-  	font-weight: 900;
-  	color: #666d89;
-  	margin: 0 0 21px 0;
-  	}
+  font-size: 1em;
+  font-weight: 300;
+  color: #767e9e;
+  line-height: 1.6;
+}
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: #666d89;
+  margin: 0 0 21px 0;
+}
+ul {
+  list-style-type: none;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.inner {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 67px 30px;
+  overflow: hidden;
+}
 
-  ul {
-  	list-style-type: none;
-  	}
+/*===================================
+============== NAVBAR ===============
+===================================*/
 .navbar {
   font-family: 'Lato', sans-serif;
   font-size: 0.7em;
@@ -40,19 +55,15 @@ h3 {
   font-weight: bold;
   color: tomato;
 }
-
+/*===================================
+============== BAJADA ===============
+===================================*/
 .bajada {
   padding: 50px 40px;
   background-color: #E6E6E6;
   margin: 0;
   text-align: center;
 }
-.inner {
-	margin: 0 auto;
-	max-width: 100%;
-	padding: 67px 30px;
-	overflow: hidden;
-	}
 
 /*===================================
 ============= OFICINAS =============
@@ -71,16 +82,43 @@ h3 {
   display: block;
 }
 .absolute{
+  font-family: 'Lato', sans-serif;
+  font-size: 0.7em;
+  font-weight: 300;
+  text-align: center;
+  color: #767e9e;
+  line-height: 1.6;
   position: absolute;
   bottom: 0;
   background-color: white;
   width: 100%;
 }
 #oficinas {
-	background: #2d303a;
-	overflow: hidden;
-	}
+  background: #2d303a;
+  overflow: hidden;
+}
 #oficinas ul.oficinas li {
-  float: left;  
+  float: left;
   margin: 0 15px 15px 0;
+}
+.oficinas-menu {
+  background: #2d303a;
+  overflow: hidden;
+}
+
+/*===================================
+============= FOOTER =============
+===================================*/
+.footer{
+  text-align: center;
+  background-color: #E6E6E6;
+  padding: 40px;
+  overflow: hidden;
+}
+.icon{
+  color: #2d303a;
+  /* border: 1px solid #2d303a;
+  border-radius: 50%;
+  padding: 5px; */
+  margin: 3px;
 }
