@@ -8,6 +8,7 @@ body{
 h3 {
   font-family: 'Aleo', serif;
   font-size: 1em;
+  text-align: center;
   font-weight: 300;
   color: #BEBEBE;
   line-height: 1.6;
@@ -31,10 +32,13 @@ a{
 .right {
   float: right;
 }
+.texcenter{
+  text-align: center;
+}
 .inner {
   margin: 0 auto;
   max-width: 100%;
-  padding: 67px 30px;
+  padding: 60px 40px;
   overflow: hidden;
 }
 .clear{
@@ -66,10 +70,11 @@ a{
 ============== BAJADA ===============
 ===================================*/
 .bajada {
-  padding: 50px 40px;
+  padding: 60px 40px;
   background-color: #E6E6E6;
   margin: 0;
   text-align: center;
+  font-weight: 300;
 }
 
 /*===================================
@@ -97,7 +102,7 @@ a{
   color: #E6E6E6;
   line-height: 1.6;
   position: absolute;
-  bottom: 0;
+  bottom: 7px;
   background-color: RGBA(45,48,58,.5);
   width: 100%;
 }
@@ -110,9 +115,47 @@ a{
   margin: 0 15px 15px 0;
 }
 .oficinas{
-  padding-top: 40px;
+  padding-top: 20px;
+}
+.oficinas-menu li a {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+	font-weight: 300;
+  overflow: hidden;
+  float: left;
+	display: inline;
+	margin: 0 10px 0 0;
+
+  -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #666d89;
+  color: #767e9e;
+  padding: 4px 7px;
+  height: 100%;
+  display: block;
 }
 .oficinas-menu li a{
+
+}
+
+/*===================================
+============= bodegas =============
+===================================*/
+
+#bodegas {
+  background: #E6E6E6;
+  overflow: hidden;
+}
+#bodegas ul.bodegas li {
+  float: left;
+  margin: 0 15px 15px 0;
+}
+.bodegas{
+  padding-top: 20px;
+}
+.bodegas-menu li a {
   font-family: 'Lato', sans-serif;
   font-size: 12px;
 	font-weight: 300;
@@ -140,12 +183,13 @@ a{
 ===================================*/
 .footer{
   text-align: center;
-  background-color: #E6E6E6;
+  color: #E6E6E6;
+  background-color: black;
   padding: 40px;
   overflow: hidden;
 }
 .icon{
-  color: #2d303a;
+  color: #E6E6E6;
   /* border: 1px solid #2d303a;
   border-radius: 50%;
   padding: 5px; */
