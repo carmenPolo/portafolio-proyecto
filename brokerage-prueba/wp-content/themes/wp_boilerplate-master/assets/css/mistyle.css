@@ -1,0 +1,266 @@
+body{
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Lora', serif;
+  font-family: 'Aleo', serif;
+}
+h3 {
+  font-family: 'Aleo', serif;
+  font-size: 1em;
+  text-align: center;
+  font-weight: 300;
+  color: #BEBEBE;
+  line-height: 1.6;
+}
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: #BEBEBE;
+  margin: 0 0 21px 0;
+}
+ul {
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+small{
+  font-size: .6em
+}
+i{
+  font-size: .7em;
+  margin-right:5px;
+}
+.left {
+  display: inline-block;
+  float: left;
+}
+.right {
+  float: right;
+}
+.texcenter{
+  text-align: center;
+}
+.inner {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 60px 40px;
+  overflow: hidden;
+}
+.clear{
+  clear: both;
+}
+
+/*===================================
+============== NAVBAR ===============
+===================================*/
+.navbar {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.7em;
+  min-height: 50px;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
+}
+.navbar-default {
+  background-color: white;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.brand{
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: tomato;
+}
+/*===================================
+============== BAJADA ===============
+===================================*/
+.bajada {
+  padding: 60px 40px;
+  background-color: #E6E6E6;
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
+}
+.bajada i {
+  color: inherit;
+  padding: 3px;
+}
+.sub_bajada {
+  padding: 30px 40px;
+  background-color: #E6E6E6;
+  color: gray;
+  border-top: 2px solid gray;
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
+}
+.sub_bajada i {
+  color: gray;
+  padding: 3px;
+}
+/*===================================
+============= OFICINAS =============
+===================================*/
+.relative{
+  position: relative;
+  max-width: 300px;
+}
+.relative a {
+  width: inherit;
+  height: inherit;
+  display: inline-block;
+}
+.relative img {
+  width: 100%;
+  display: block;
+}
+.absolute{
+  padding: 5px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.7em;
+  font-weight: 300;
+  text-align: center;
+  color: #E6E6E6;
+  line-height: 1.6;
+  position: absolute;
+  bottom: 7px;
+  background-color: RGBA(45,48,58,.5);
+  width: 100%;
+}
+#oficinas {
+  background: #2d303a;
+  overflow: hidden;
+}
+#oficinas ul.oficinas li {
+  float: left;
+  margin: 0 15px 15px 0;
+}
+.oficinas{
+  padding-top: 20px;
+}
+.oficinas-menu li a {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+	font-weight: 300;
+  overflow: hidden;
+  float: left;
+	display: inline;
+	margin: 0 10px 0 0;
+
+  -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #666d89;
+  color: #767e9e;
+  padding: 4px 7px;
+  height: 100%;
+  display: block;
+}
+.oficinas-menu li a{
+
+}
+
+/*===================================
+============= bodegas =============
+===================================*/
+
+#bodegas {
+  background: #E6E6E6;
+  overflow: hidden;
+}
+#bodegas ul.bodegas li {
+  float: left;
+  margin: 0 15px 15px 0;
+}
+.bodegas{
+  padding-top: 20px;
+}
+.bodegas-menu li a {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+	font-weight: 300;
+  overflow: hidden;
+  float: left;
+	display: inline;
+	margin: 0 10px 0 0;
+
+  -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #666d89;
+  color: #767e9e;
+  padding: 4px 7px;
+  height: 100%;
+  display: block;
+}
+.oficinas-menu li a{
+
+}
+
+/*===================================
+============= FOOTER =============
+===================================*/
+.footer{
+  text-align: center;
+  color: #E6E6E6;
+  background-color: black;
+  padding: 40px;
+  overflow: hidden;
+}
+.icon-footer{
+  font-size: 1em;
+  color: #E6E6E6;
+}
+/*===================================
+============= nosotros =============
+===================================*/
+.vimeo {
+  margin:0;
+  padding: 0;
+}
+.container{
+  max-width: 100vw;
+}
+/*===================================
+============= contacto =============
+===================================*/
+#contacto{
+font-weight: 300;
+background: #F2F4F4;
+overflow: hidden;
+margin-top: 60px;
+	}
+.form-control {
+  background-color: #F2F4F4;
+  font-size: 12px;
+  padding: 0px 15px;
+	margin: 0 0 16px 0;
+	outline: none;
+}
+label{
+  background-color: #F2F4F4;
+  font-size: 12px;
+  color: inherit;
+	outline: none;
+}
+.btn {
+  background-color: #F2F4F4;
+	padding: 0;
+	margin-top: 5px;
+	overflow: hidden;
+	width: 100px;
+	height: 30px;
+	cursor: pointer;
+	text-align: center;
+	font-size: .8em;
+	text-transform: uppercase;
+	}
+.radio{
+  background-color: #F2F4F4;
+  font-size: 12px;
+}

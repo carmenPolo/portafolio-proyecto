@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /**
  * Style Enqueue
@@ -25,6 +25,11 @@ function dl_enqueue_style() {
 	wp_register_style( 'fontawesome', get_theme_file_uri( '/assets/css/fontawesome.css'), null, '5.2.0', 'screen' );
 	wp_register_style( 'main_style', get_theme_file_uri( '/assets/css/style.css'), array('reset'), $theme_data->get( 'Version' ), 'screen' );
 
+	wp_register_style( 'lora', 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Lora', null, null, 'screen' );
+	wp_register_style( 'aleo', 'https://fonts.googleapis.com/css?family=Aleo:300,400,700', null, null, 'screen' );
+	wp_register_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.6.3/css/all.css', null, null, 'screen' );
+	wp_register_style( 'bootstrapcdn', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', null, null, 'screen' );
+	wp_register_style( 'mistyle', get_theme_file_uri( 'assets/css/mistyle.css'), null, null, 'screen' );
 
 	/* Enqueue Styles */
 	if ( $theme_options['slider']['flexslider'] ) {
@@ -40,6 +45,13 @@ function dl_enqueue_style() {
 	}
 
 	wp_enqueue_style( 'main_style' );
+
+	wp_enqueue_style( 'lora' );
+	wp_enqueue_style( 'aleo' );
+	wp_enqueue_style( 'fontawesome' );
+	wp_enqueue_style( 'bootstrapcdn' );
+	wp_enqueue_style( 'mistyle' );
+
 
 }
 
