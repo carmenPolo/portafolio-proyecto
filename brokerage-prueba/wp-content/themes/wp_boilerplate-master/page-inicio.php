@@ -15,23 +15,31 @@
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
+
     <div class="item active">
-      <img src="assets/images/of_2_slider.jpg" alt="Brockerage">
+
+<!-- <#?php
+        $slider = array(
+        'post_type'      => 'slider',
+        'posts_per_page'  => 5
+        );
+
+        $get_slider = new WP_Query( $slider );
+
+        while ( $get_slider->have_posts() ) {
+        $get_slider->the_post();
+        ?>
+
+        <#?php the_post_thumbnail() ?>
+
+        <#?php wp_reset_postdata();
+  ?> -->
+
+
+      <img src="<?php bloginfo('template_url') ?>/assets/images/of_2_slider.jpg" alt="Brockerage">
       <div class="carousel-caption"></div>
     </div>
 
-    <div class="item">
-      <img src="assets/images/of_11_slider.jpg" alt="...">
-      <div class="carousel-caption"></div>
-    </div>
-
-    <div class="item">
-      <img src="assets/images/of_4_slider.jpg" alt="...">
-      <div class="carousel-caption"></div>
-    </div>
-
-    <div class="item">
-      <img src="assets/images/city_2.jpg" alt="...">
       <div class="carousel-caption"></div>
     </div>
   </div><!-- carousel-inner -->
@@ -80,16 +88,16 @@
           <ul class="oficinas clear">
             <li class="relative" data-id="id-1" data-type="cond">
                   <a href="#">
-                      <img src="assets/images/of_1.jpg" alt="#" />
+                      <img src="<?php bloginfo('template_url') ?>/assets/images/of_1.jpg" alt="#" />
                       <div class="absolute" >
                         Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
                       </div>
                   </a>
               </li>
 
-            <li class="relative" data-id="id-2" data-type="cond">
+            <!-- <li class="relative" data-id="id-2" data-type="cond">
                   <a href="#">
-                      <img src="assets/images/of_2.jpg" alt="#" />
+                      <img src="<#?php bloginfo('template_url') ?>/assets/images/of_2.jpg" alt="#" />
                       <div class="absolute" >
                         Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
                       </div>
@@ -98,7 +106,7 @@
 
             <li class="relative" data-id="id-3" data-type="prov">
                   <a href="#">
-                      <img src="assets/images/of_3.jpg" alt="#" />
+                      <img src="<#?php bloginfo('template_url') ?>/assets/images/of_3.jpg" alt="#" />
                       <div class="absolute" >
                         Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
                       </div>
@@ -107,7 +115,7 @@
 
             <li class="relative" data-id="id-4" data-type="prov">
                   <a href="#">
-                      <img src="assets/images/of_4.jpg" alt="#" />
+                      <img src="<#?php bloginfo('template_url') ?>/assets/images/of_4.jpg" alt="#" />
                       <div class="absolute" >
                         Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
                       </div>
@@ -116,7 +124,7 @@
 
             <li class="relative" data-id="id-5" data-type="prov">
                   <a href="#">
-                      <img src="assets/images/of_5.jpg" alt="#" />
+                      <img src="<#?php bloginfo('template_url') ?>/assets/images/of_5.jpg" alt="#" />
                       <div class="absolute" >
                         Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
                       </div>
@@ -125,7 +133,7 @@
 
             <li class="relative" data-id="id-6" data-type="cond">
                   <a href="#">
-                      <img src="assets/images/of_6.jpg" alt="#" />
+                      <img src="<#?php bloginfo('template_url') ?>/assets/images/of_6.jpg" alt="#" />
                       <div class="absolute" >
                         Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
                       </div>
@@ -134,7 +142,7 @@
 
             <li class="relative" data-id="id-7" data-type="prov">
                   <a href="#">
-                      <img src="assets/images/of_7.jpg" alt="#" />
+                      <img src="<#?php bloginfo('template_url') ?>/assets/images/of_7.jpg" alt="#" />
                       <div class="absolute" >
                         Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
                       </div>
@@ -143,7 +151,7 @@
 
             <li class="relative" data-id="id-8" data-type="cent">
                   <a href="#">
-                      <img src="assets/images/of_8.jpg" alt="#" />
+                      <img src="<#?php bloginfo('template_url') ?>/assets/images/of_8.jpg" alt="#" />
                       <div class="absolute" >
                         Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
                       </div>
@@ -152,7 +160,7 @@
 
             <li class="relative" data-id="id-9" data-type="cent">
                   <a href="#">
-                      <img src="assets/images/of_9.jpg" alt="#" />
+                      <img src="<#?php bloginfo('template_url') ?>/assets/images/of_9.jpg" alt="#" />
                       <div class="absolute" >
                         Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
                       </div>
@@ -161,7 +169,7 @@
 
             <li class="relative" data-id="id-10" data-type="cent">
                   <a href="#">
-                      <img src="assets/images/of_11.jpg" alt="#" />
+                      <img src="<#?php bloginfo('template_url') ?>/assets/images/of_11.jpg" alt="#" />
                       <div class="absolute" >
                         Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
                       </div>
@@ -170,7 +178,7 @@
 
             <li class="relative" data-id="id-11" data-type="cond">
                   <a href="#">
-                      <img src="assets/images/of_12.jpg" alt="#" />
+                      <img src="<#?php bloginfo('template_url') ?>/assets/images/of_12.jpg" alt="#" />
                       <div class="absolute" >
                         Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
                       </div>
@@ -179,12 +187,12 @@
 
             <li class="relative" data-id="id-12" data-type="prov">
                   <a href="#">
-                      <img src="assets/images/of_13.jpg" alt="#" />
+                      <img src="<#?php bloginfo('template_url') ?>/assets/images/of_13.jpg" alt="#" />
                       <div class="absolute" >
                         Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
                       </div>
                   </a>
-              </li>
+              </li> -->
 
           </ul><!-- .Oficinas -->
       </div><!-- .inner -->
@@ -211,7 +219,7 @@
           <ul class="bodegas clear">
             <li class="relative" data-id="id-1" data-type="cond">
                   <a href="#">
-                      <img src="assets/images/of_1.jpg" alt="#" />
+                      <img src="<?php bloginfo('template_url') ?>/assets/images/of_1.jpg" alt="#" />
                       <div class="absolute" >
                         Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
                       </div>
@@ -220,7 +228,7 @@
 
             <li class="relative" data-id="id-2" data-type="cond">
                   <a href="#">
-                      <img src="assets/images/of_2.jpg" alt="#" />
+                      <img src="<?php bloginfo('template_url') ?>/assets/images/of_2.jpg" alt="#" />
                       <div class="absolute" >
                         Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
                       </div>
@@ -229,7 +237,7 @@
 
             <li class="relative" data-id="id-3" data-type="prov">
                   <a href="#">
-                      <img src="assets/images/of_3.jpg" alt="#" />
+                      <img src="<?php bloginfo('template_url') ?>/assets/images/of_3.jpg" alt="#" />
                       <div class="absolute" >
                         Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
                       </div>
@@ -238,7 +246,7 @@
 
             <li class="relative" data-id="id-4" data-type="prov">
                   <a href="#">
-                      <img src="assets/images/of_4.jpg" alt="#" />
+                      <img src="<?php bloginfo('template_url') ?>/assets/images/of_4.jpg" alt="#" />
                       <div class="absolute" >
                         Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
                       </div>
@@ -247,7 +255,7 @@
 
             <li class="relative" data-id="id-5" data-type="prov">
                   <a href="#">
-                      <img src="assets/images/of_5.jpg" alt="#" />
+                      <img src="<?php bloginfo('template_url') ?>/assets/images/of_5.jpg" alt="#" />
                       <div class="absolute" >
                         Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
                       </div>
@@ -256,7 +264,7 @@
 
             <li class="relative" data-id="id-6" data-type="cond">
                   <a href="#">
-                      <img src="assets/images/of_6.jpg" alt="#" />
+                      <img src="<?php bloginfo('template_url') ?>/assets/images/of_6.jpg" alt="#" />
                       <div class="absolute" >
                         Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
                       </div>
@@ -265,7 +273,7 @@
 
             <li class="relative" data-id="id-7" data-type="prov">
                   <a href="#">
-                      <img src="assets/images/of_7.jpg" alt="#" />
+                      <img src="<?php bloginfo('template_url') ?>/assets/images/of_7.jpg" alt="#" />
                       <div class="absolute" >
                         Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
                       </div>
@@ -274,7 +282,7 @@
 
             <li class="relative" data-id="id-8" data-type="cent">
                   <a href="#">
-                      <img src="assets/images/of_8.jpg" alt="#" />
+                      <img src="<?php bloginfo('template_url') ?>/assets/images/of_8.jpg" alt="#" />
                       <div class="absolute" >
                         Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
                       </div>
@@ -283,7 +291,7 @@
 
             <li class="relative" data-id="id-9" data-type="cent">
                   <a href="#">
-                      <img src="assets/images/of_9.jpg" alt="#" />
+                      <img src="<?php bloginfo('template_url') ?>/assets/images/of_9.jpg" alt="#" />
                       <div class="absolute" >
                         Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
                       </div>
@@ -292,7 +300,7 @@
 
             <li class="relative" data-id="id-10" data-type="cent">
                   <a href="#">
-                      <img src="assets/images/of_11.jpg" alt="#" />
+                      <img src="<?php bloginfo('template_url') ?>/assets/images/of_11.jpg" alt="#" />
                       <div class="absolute" >
                         Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
                       </div>
@@ -301,7 +309,7 @@
 
             <li class="relative" data-id="id-11" data-type="cond">
                   <a href="#">
-                      <img src="assets/images/of_12.jpg" alt="#" />
+                      <img src="<?php bloginfo('template_url') ?>/assets/images/of_12.jpg" alt="#" />
                       <div class="absolute" >
                         Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
                       </div>
@@ -310,7 +318,7 @@
 
             <li class="relative" data-id="id-12" data-type="prov">
                   <a href="#">
-                      <img src="assets/images/of_13.jpg" alt="#" />
+                      <img src="<?php bloginfo('template_url') ?>/assets/images/of_13.jpg" alt="#" />
                       <div class="absolute" >
                         Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
                       </div>

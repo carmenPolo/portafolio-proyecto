@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /**
  * theme_options Variable
@@ -16,12 +16,12 @@ $theme_options = array(
 	),
 	'slider'				=> array(
 		'flickity'			=> false,
-		'flexslider'		=> true,
+		'flexslider'		=> false,
 	),
 	'jQuery'				=> true,
 	'fontawesome'			=> true,
 	'menu'					=> array(
-		'button_home'		=> true,
+		'button_home'		=> false,
 		'button_name'		=> 'Home'
 	)
 );
