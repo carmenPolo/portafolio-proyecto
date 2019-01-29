@@ -18,7 +18,7 @@
 
     <div class="item active">
 
-<!-- <#?php
+<#?php
         $slider = array(
         'post_type'      => 'slider',
         'posts_per_page'  => 5
@@ -33,7 +33,7 @@
         <#?php the_post_thumbnail() ?>
 
         <#?php wp_reset_postdata();
-  ?> -->
+  ?>
 
 
       <img src="<?php bloginfo('template_url') ?>/assets/images/of_2_slider.jpg" alt="Brockerage">
@@ -86,14 +86,35 @@
 
           <!-- OFICINAS -->
           <ul class="oficinas clear">
-            <li class="relative" data-id="id-1" data-type="cond">
-                  <a href="#">
-                      <img src="<?php bloginfo('template_url') ?>/assets/images/of_1.jpg" alt="#" />
-                      <div class="absolute" >
-                        Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
-                      </div>
-                  </a>
-              </li>
+
+<#?php
+        $oficinas = array(
+        'post_type'      => 'oficinas',
+        'posts_per_page'  => 12
+        );
+
+        $get_oficinas = new WP_Query( $oficinas );
+
+        while ( $get_oficinas->have_posts() ) {
+        $get_oficinas->the_post();
+        ?>
+
+        <li class="relative" data-id="id-1" data-type="cond">
+              <a href="#">
+                  <img src="<?php bloginfo('template_url') ?>/assets/images/of_1.jpg" alt="#" />
+                  <div class="absolute" >
+                    Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
+                  </div>
+              </a>
+          </li>
+
+        <?php wp_reset_postdata();
+  ?>
+
+<?php
+ini_set('error_reporting', E_ALL);
+?>
+
 
             <!-- <li class="relative" data-id="id-2" data-type="cond">
                   <a href="#">
