@@ -36,7 +36,7 @@ function propiedades_post_type() {
 		'description'           => __( 'Post Type Description', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'thumbnail' ),
-		'taxonomies'            => array(),
+		'taxonomies'            => array('category'),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,

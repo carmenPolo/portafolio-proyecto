@@ -5,43 +5,43 @@
             CAROUSEL
 =============================-->
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="4000">
-  <!-- Indicators -->
+  <?php
+  $slides = array(
+    'post_type'      => 'slider',
+    'posts_per_page' => 5
+  );
+
+  $get_slides = new WP_Query( $slides );
+  $active = 0;
+  ?>
+
   <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-  </ol>
+  <?php
+   while ( $get_slides->have_posts() ) {
+     $get_slides->the_post();
+
+   ?>
+  <!-- Indicators -->
+    <li data-target="#carousel-example-generic" data-slide-to="<?php echo $active ?>" class="<?php if ($active === 0 ) {echo 'active';} ?>"></li>
+  <?php $active += 1; } ?>
+</ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
+    <?php
+     $active = 0;
+     while ( $get_slides->have_posts() ) {
+       $get_slides->the_post();
+       $active += 1;
+     ?>
 
-    <div class="item active">
+     <div class="item <?php if ($active === 1 ) {echo 'active';} ?>">
+       <?php the_post_thumbnail('slideshow') ?>
+       <div class="carousel-caption"></div>
+     </div>
 
-<#?php
-        $slider = array(
-        'post_type'      => 'slider',
-        'posts_per_page'  => 5
-        );
+     <?php } wp_reset_postdata(); ?>
 
-        $get_slider = new WP_Query( $slider );
-
-        while ( $get_slider->have_posts() ) {
-        $get_slider->the_post();
-        ?>
-
-        <#?php the_post_thumbnail() ?>
-
-        <#?php wp_reset_postdata();
-  ?>
-
-
-      <img src="<?php bloginfo('template_url') ?>/assets/images/of_2_slider.jpg" alt="Brockerage">
-      <div class="carousel-caption"></div>
-    </div>
-
-      <div class="carousel-caption"></div>
-    </div>
   </div><!-- carousel-inner -->
 
   <!-- Controls -->
@@ -87,33 +87,27 @@
           <!-- OFICINAS -->
           <ul class="oficinas clear">
 
-<#?php
-        $oficinas = array(
-        'post_type'      => 'oficinas',
-        'posts_per_page'  => 12
-        );
+        <?php $arg = array(
+         'post_type'       => 'oficinas',
+         'posts_per_page'  => 12
+         );
 
-        $get_oficinas = new WP_Query( $oficinas );
+         $get_arg = new WP_Query( $arg );
 
-        while ( $get_oficinas->have_posts() ) {
-        $get_oficinas->the_post();
-        ?>
+         while ( $get_arg->have_posts() ) {
+         $get_arg->the_post();
+         ?>
 
-        <li class="relative" data-id="id-1" data-type="cond">
-              <a href="#">
-                  <img src="<?php bloginfo('template_url') ?>/assets/images/of_1.jpg" alt="#" />
-                  <div class="absolute" >
-                    Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
-                  </div>
-              </a>
-          </li>
+         <li class="relative" data-id="id-1" data-type="cond">
+             <a href="#">
+                 <img src="<?php bloginfo('template_url') ?>/assets/images/of_1.jpg" alt="#" />
+                 <div class="absolute" >
+                   Providencia · <strong>UF $130.000</strong> · Oficina <br> Carmen Silva/El Bosque
+                 </div>
+             </a>
+         </li>
 
-        <?php wp_reset_postdata();
-  ?>
-
-<?php
-ini_set('error_reporting', E_ALL);
-?>
+         <?php } wp_reset_postdata(); ?>
 
 
             <!-- <li class="relative" data-id="id-2" data-type="cond">
