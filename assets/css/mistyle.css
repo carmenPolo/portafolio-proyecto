@@ -56,23 +56,91 @@ i{
 /*===================================
 ============== NAVBAR ===============
 ===================================*/
-.navbar {
+/* clearfix */
+.clearfix:before, .clearfix:after{
+  content: "";
+  display: table;
+}
+.clearfix:after{
+  clear: both;
+}
+.clearfix:before{
+  *zoom:1;
+}
+/* nav */
+nav{
+  min-height: 50px;
+  width: 100%;
+  background: white;
   font-family: 'Lato', sans-serif;
   font-size: 0.7em;
-  min-height: 50px;
-  margin-bottom: 0px;
-  border: 1px solid transparent;
+  text-transform: uppercase;
+  position: fixed;
+  border-color: #e7e7e7;
+  z-index: 1010;
+
 }
-.navbar-default {
-  background-color: white;
-  border: none;
-  border-radius: 0;
-  margin-bottom: 0;
+
+nav ul{
+  margin: 0 auto;
+  display: inline-block;
+  float: right;
+
 }
+
+nav li{
+  display: inline;
+}
+
+nav a {
+  color: gray;
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav li a{
+  box-sizing: border-box;
+  padding-top: 15px;
+  margin-right: 15px;
+}
+
+
+nav a:hover, nav a:active{
+  color: #E6E6E6;
+}
+
 .brand{
+  display: inline;
+  float: left;
   font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
   font-weight: bold;
-  color: tomato;
+  color: #FA8072;
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+@media(min-width:400px) and (max-width:600px) {
+nav {
+  height: auto;
+  width: 200px;
+  padding-bottom: 15px;
+  background-color:#FA8072;
+  }
+
+ul{
+  padding: 0;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 5;
+}
+.optative{
+   color: white;
+   /* display: none; */
 }
 /*===================================
 ============== BAJADA ===============

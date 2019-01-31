@@ -56,6 +56,22 @@ i{
 /*===================================
 ============== NAVBAR ===============
 ===================================*/
+  
+nav ul{
+  display: inline-block;
+}
+nav ul li {
+  display: inline-block;
+}
+@media(min-width:400px) and (max-width:600px) {
+nav{
+  width: 200px;
+  margin: auto;
+  background-color:#F8F9F9;
+}
+.op
+
+
 .navbar-right {
   font-family: 'Lato', sans-serif;
   font-size: 0.7em;
