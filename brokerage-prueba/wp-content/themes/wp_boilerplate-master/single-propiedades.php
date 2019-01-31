@@ -10,7 +10,6 @@
 
         <!-- variables -->
         <?php
-        $images = get_field('gallery');
         $availability = get_field('availability');
         $field = get_field_object('comuna');
         $value = $field['value'];
@@ -23,22 +22,32 @@
       <!-- content -->
           <h1><?php the_title(); ?></h1>
 
-          <?php the_field('descripcion'); ?>
+          <?php the_content(); ?>
 
       <!-- slider gallery -->
       <?php
+      $images = get_field('gallery');
       if( $images ): ?>
-          <ul>
-              <?php foreach( $images as $image ): ?>
-                  <li>
-                      <a href="<?php echo $image['url']; ?>">
-                           <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
-                      </a>
-                      <p><?php echo $image['caption']; ?></p>
-                  </li>
-              <?php endforeach; ?>
-          </ul>
-      <?php endif; ?>
+    <div id="slider" class="flexslider">
+        <ul class="slides">
+            <?php foreach( $images as $image ): ?>
+                <li>
+                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                    <p><?php echo $image['caption']; ?></p>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+    <div id="carousel" class="flexslider">
+        <ul class="slides">
+            <?php foreach( $images as $image ): ?>
+                <li>
+                    <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+<?php endif; ?>
 
 
       <ul>
@@ -50,10 +59,10 @@
 
         <!-- nro baños -->
         <li>
-        <#?php
+        <?php
           if($banos){
-          echo $banos;
-        } endif;
+          echo "Cantidad de baños: {$banos}";
+        };
         ?>
         </li>
 
